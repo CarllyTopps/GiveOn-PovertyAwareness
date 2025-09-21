@@ -310,7 +310,7 @@ section:nth-child(even) {
 .section-title {
     text-align: center;
     margin-bottom: 3rem;
-    color: #2c3e50;
+    color: #5187bd;
     font-size: 2.5rem;
     font-weight: 700;
     position: relative;
@@ -808,6 +808,16 @@ section:nth-child(even) {
     font-style: italic;
 }
 
+.news-source a {
+    color: rgba(255,255,255,0.6);
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+.news-source a:hover {
+    color: rgba(255,255,255,0.9);
+}
+
 /* Solutions Section */
 .solutions-section {
     background-color: #ffffff;
@@ -958,7 +968,7 @@ section:nth-child(even) {
 .action-link {
     display: block;
     color: #3498db;
-    text-decoration: none;
+    text-decoration: underline;
     margin: 0.5rem 0;
     transition: color 0.3s ease;
 }
@@ -1053,12 +1063,13 @@ section:nth-child(even) {
 
 .footer-section a {
     color: #bdc3c7;
-    text-decoration: none;
+    text-decoration: underline;
     transition: color 0.3s ease;
 }
 
 .footer-section a:hover {
     color: white;
+    text-decoration: underline;
 }
 
 .footer-bottom {
@@ -1070,11 +1081,13 @@ section:nth-child(even) {
 
 .footer-bottom a {
     color: #bdc3c7;
-    text-decoration: none;
+    text-decoration: underline;
+    transition: color 0.3s ease;
 }
 
 .footer-bottom a:hover {
     color: white;
+    text-decoration: underline;
 }
 
 /* Mobile Styles - Youthful and Engaging Theme */
@@ -1556,6 +1569,16 @@ section:nth-child(even) {
 
     .action-link:hover {
         color: white;
+    }
+
+    /* Mobile News Source Links */
+    .news-source a {
+        color: rgba(255,255,255,0.7);
+        text-decoration: underline;
+    }
+
+    .news-source a:hover {
+        color: rgba(255,255,255,0.9);
     }
 
 
