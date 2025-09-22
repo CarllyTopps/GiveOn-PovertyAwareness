@@ -799,6 +799,7 @@ section:nth-child(even) {
 }
 
 /* News Section */
+/* News Section */
 .news-section {
     background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
     color: white;
@@ -809,6 +810,7 @@ section:nth-child(even) {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
     margin-top: 2rem;
+    align-items: stretch; /* This ensures all cards have equal height */
 }
 
 .news-card {
@@ -818,6 +820,9 @@ section:nth-child(even) {
     overflow: hidden;
     transition: all 0.3s ease;
     border: 1px solid rgba(255,255,255,0.2);
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    height: 100%; /* Take full height of grid cell */
 }
 
 .news-card:hover {
@@ -832,6 +837,7 @@ section:nth-child(even) {
 .news-image {
     position: relative;
     overflow: hidden;
+    flex-shrink: 0; /* Prevent image from shrinking */
 }
 
 .news-img {
@@ -859,6 +865,9 @@ section:nth-child(even) {
 
 .news-content {
     padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    flex: 1; /* Take remaining space */
 }
 
 .news-content h3 {
@@ -871,6 +880,7 @@ section:nth-child(even) {
     color: rgba(255,255,255,0.8);
     margin-bottom: 1rem;
     line-height: 1.6;
+    flex: 1; /* This allows the excerpt to grow and push meta to bottom */
 }
 
 .news-meta {
@@ -879,6 +889,8 @@ section:nth-child(even) {
     align-items: center;
     font-size: 0.8rem;
     color: rgba(255,255,255,0.6);
+    margin-top: auto; /* This pushes the meta to the bottom */
+    padding-top: 1rem; /* Add some space above meta */
 }
 
 .news-date {
